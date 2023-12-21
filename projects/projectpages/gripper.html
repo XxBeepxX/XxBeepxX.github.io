@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>Ryan Ting Portfolio</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        h2 {
+            text-align: center; 
+        }
+        section {
+            padding: 2em;
+            color: #fff; /* Set text color to contrast with the background */
+        }
+        #projects {
+            margin-top: 20px; /* Adjust margin-top as needed */
+            padding: 0em;
+            text-align: center;
+        }
+
+        #Research,
+        #School,
+        #Personal {
+            text-align: center;
+            width: 300px; /* Adjust the width as needed */
+            padding: 20px;
+            margin: 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #socials {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            height: 229px;
+            width: 64px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: black;
+            z-index: 2;
+            -webkit-transition: right 1s;
+            transition: right 1s;
+        }
+        .socials a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .socials img {
+            width: 50px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ryan Ting</h1>
+        <nav>
+            <a href="../../index.html">About Me</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../skills.html">Related Experiences</a>
+            <a href="../../contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <section id="Summary">
+        <h2>Robotic Gripper</h2>
+        <p>I would say this is the first major robotics project that I worked on I wanted to challenege myself and create the most advanced robotic gripper</p>
+    </section>
+    <section id="Design">
+        <h2>Design Work</h2>
+        <p>This project started off fairly simple where I wanted to create a tri-finger robotic gripper with a rotating base to adjust positioning of the fingers.</p>
+        <img src="../../projects/projectpages/gripperimage/firstcad.png" alt="Concept Cad model of design" width="300" height="200">
+        <img src="../../projects/projectpages/gripperimage/secondcad.png" alt="Realistic Cad model of design" width="300" height="200">
+        <p>It was a fairly simple design, 2 degrees of freedom per finger, though I felt that it wasn't dexterious enough and I began to expereiment around with designs</p>
+        <img src="../../projects/projectpages/gripperimage/threecad.png" alt="Second main iteration of design" width="300" height="200">
+        <p>This design had 3 degrees of freedom per finger where tip of the finger would be able to rotate for adjusted gripping. This design was good, but the Current Cad model lacked elegance and I felt the need to fix it up</p>
+        <p>While working on the fixing, I think I got a spurt of ambition, and I decided that I would try to make the most dexterious gripper possible. I wanted the gripper to be able rotate, shift, and do other things. Evencually I settled on a 5 degree of freedom per finger design. the gripper will be mounted on a Pandas Arm</p>
+        <img src="../../projects/projectpages/gripperimage/prefinal.png" alt="Final Design angle 1" width="300" height="200">
+        <p>After various 3d printed tests and minor modifications, The design was complete, here is what the final Cad looks like</p>
+        <img src="../../projects/projectpages/gripperimage/finaldesign.png" alt="Final Design angle 1" width="300" height="200">
+        <img src="../../projects/projectpages/gripperimage/finaldview2.png" alt="Realistic Cad model of design" width="300" height="200">
+        <p>Below are all the motions that are contained in a single finger.</p>
+        <img src="../../projects/projectpages/gripperimage/motions.png" alt="Realistic Cad model of design" width="175" height="200">
+        <ul>
+            <li>Motion 1:base rotation(rotation manipulation)</li>
+            <li>Motion 2: Outward extension(molding, manipulation)</li>
+            <li>Motion 3: up and down extension(molding, manipulation)</li>
+            <li>Motion 4: upper finger rotation(molding)</li>
+            <li>Motion 5: grip closing movement(molding)</li>
+        </ul>
+        <p>I would say the hardest part of design the hardware as motion 4 + motion 5. I wanted to ensure that both would be able to work without worring about tangling wires. After learning about a Slipring from a friend and various design iterations, I was able to come up with a solution that will fulfill these requirements</p>
+        <img src="../../projects/projectpages/gripperimage/slipring.png" alt="Realistic Cad model of design" width="300" height="200">
+        <p>With the Design Done, it was time for assembly. Here is what the gripper looks like fully assembled</p>
+        <img src="../../projects/projectpages/gripperimage/physfinal.png" alt="Realistic Cad model of design" width="300" height="200">
+        <img src="../../projects/projectpages/gripperimage/mountedfinal.png" alt="Realistic Cad model of design" width="300" height="200">
+    </section>
+    <section id="Eletrical/Software">
+        <h2>Eletrical/Software Work</h2>
+        <p> I would say this part was the biggest learning expereince for me. I had to wire 15 motors where I have a mix between servos and DCs. Though back than,I was not 
+            familliar with DC motors with Hall sensors and didn't know beforehand they would require a motor driver in order to operate. Once I figured out how to do the controlled movement, I also had to figure out how to have sysntrious movement from one Ariduno Mega. Though in the end I was able to figure it out. Below is the planned wiring diagram</p>
+        <img src="../../projects/projectpages/gripperimage/plannedwiredi.png" alt="Realistic Cad model of design" width="800" height="500">
+        <p> Wiring this this was messy. But managable
+    </section>
+    <section id="socials">
+        <h2>socials</h2>
+        <div class="socials">
+            <a href="https://github.com/XxBeepxX/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
+

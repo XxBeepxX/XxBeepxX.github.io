@@ -1,0 +1,166 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+section {
+    padding: 2em;
+    color: #fff; /* Set text color to contrast with the background */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.projects-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+#socials {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    height: 229px;
+    width: 64px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: black;
+    z-index: 2;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+}
+.socials a {
+    display: block;
+    margin-bottom: 10px;
+}
+.socials img {
+    width: 50px;
+    height: auto;
+}
+
+.platform-link {
+    text-decoration: none;
+    color: inherit; /* Use the same color as other non-linked text */
+}
+
+.platform:hover .platformDescription {
+    opacity: 1;
+}
+.platform {
+	display:inline-block;
+	position:relative;
+	margin:2px auto;
+	height:200px;
+	width:300px;
+	cursor:pointer;
+	background:rgba(25,25,25,0.95);
+	-webkit-transition:height 0.5s;
+	transition:height 0.5s;
+}
+.platformImage {
+	top:2px;
+	position:relative;
+	height:150px;
+	width:296px;
+	margin:0px 2px;
+	background:whitesmoke;
+    
+}
+.platformDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.platform div div p, .platform div p {
+	margin:5px;
+	color:white;
+}
+.platform:hover {
+	height:240px;
+	background:rgba(25,25,25,1);
+}
+.platform:hover .platformImage {
+	filter:brightness(0);
+}
+.platform:hover .blockTitle {
+	color:rgba(232,232,232,0);
+}
+.platform:hover .linksBar {
+	opacity:1;
+}
+.platform .blockTitle {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.background {
+	-webkit-transition:opacity 0.4s;
+	transition:opacity 0.4s;
+}
+.largeText {
+	font-family:HelveticaNeue-CondensedBold, HelveticaNeue-Thin, Helvetica, Arial;
+	font-size: 20px;
+    width: 70%; 
+    text-align: center;
+}
+.mediumText {
+	padding-top:5px;
+    font-weight: bold;
+	font-size:14px;
+    text-align: center;
+}
+.smallText {
+	font-size:16px;
+    text-align: center;
+}
+.skills {
+    font-size:12px;
+    text-align: center;
+}
+.seemore {
+	font-weight: bold;
+    color: #007bff; /* Change color to suit your design */
+    cursor: pointer; 
+}

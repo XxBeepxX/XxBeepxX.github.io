@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>Ryan Ting Portfolio</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        section {
+            padding: 2em;
+            color: #fff; /* Set text color to contrast with the background */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #socials {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            height: 229px;
+            width: 64px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: black;
+            z-index: 2;
+            -webkit-transition: right 1s;
+            transition: right 1s;
+        }
+        .socials a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .socials img {
+            width: 50px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ryan Ting</h1>
+        <nav>
+            <a href="../../index.html">About Me</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../skills.html">Related Experiences</a>
+            <a href="../../contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <section id="Summary">
+        <h2>IE332 Project 1 - Build a Website</h2>
+        <p>This project was my first introduction to website development (this portfolio is my second). It was for the most challenging class in my major,
+           although it didn't feel that difficult to me. Our objective was to create a website that has data already uploaded to it and can perform queries on it for data analysis. However,
+           there was an opportunity for bonus points for anything extra, and I took advantage of that fact. In the end, our team created this website (they might delete it later):
+           <a href="https://web.ics.purdue.edu/~g1131592/code_source/home.php">Here</a>
+        </p>
+        <p>Here are a couple of screenshots of the website:</p>
+        <img src="../../projects/projectpages/p1image/home.png" alt="Final Design angle 1" width="300" height="200">
+        <img src="../../projects/projectpages/p1image/mainpage.png" alt="Final Design angle 1" width="300" height="200">
+            
+    </section>
+    <section id="Html/CSS">
+        <h2>HTML/CSS</h2>
+        <p>I took most of the part when the home, about, login, and register pages. The home and about pages showed info and were primarily HTML/CSS. The styling wasn't amazing, but it had cool gifs in the background.</p>
+       
+    </section>
+    <section id="Bodycontent">
+        <h2>JavaScript+PHP+MySQL</h2>
+        <p>I also wrote a lot of the JavaScript aspects on the login/register pages. I added a validator to make sure you would log in correctly. In PHP, I made sure that when registering, there is no duplicate email already in the database, and when logging in, you need to enter the right password. Also, if you were already logged in and reloaded the page, you would be redirected to the product page.</p>
+        <img src="../../projects/projectpages/p1image/mainpage.png" alt="Final Design angle 1" width="300" height="200">
+        <p>Within the main page, I made sure that only data associated with your account would show up. I also created the feature of being able to upload a CSV into the MySQL database with a JavaScript validator to ensure the data is good. Other than that, I assisted in the general structure of the database and a couple of the SQL search queries.</p>
+        <p>I ended up taking more of a leadership position in this project where my teammates would ask me for tasks/to check their work, and I would quality-check over everyone's code to make sure it looked good.</p>
+    </section>
+    <section id="socials">
+        <h2>Socials</h2>
+        <div class="socials">
+            <a href="https://github.com/XxBeepxX/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

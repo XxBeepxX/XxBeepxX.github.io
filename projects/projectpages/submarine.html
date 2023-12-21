@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>Ryan Ting Portfolio</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        section {
+            padding: 2em;
+            color: #fff; /* Set text color to contrast with the background */
+        }
+        #projects {
+            margin-top: 20px; /* Adjust margin-top as needed */
+            padding: 0em;
+            text-align: center;
+        }
+        #Summary {
+            padding: 0em;
+            text-align: center;
+        }
+        #Body {
+            padding: 0em;
+        }
+        h2 {
+            text-align: center; 
+        }
+        #Research,
+        #School,
+        #Personal {
+            text-align: center;
+            width: 300px; /* Adjust the width as needed */
+            padding: 20px;
+            margin: 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #socials {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            height: 229px;
+            width: 64px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: black;
+            z-index: 2;
+            -webkit-transition: right 1s;
+            transition: right 1s;
+        }
+        .socials a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .socials img {
+            width: 50px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<header>
+    <h1>Ryan Ting</h1>
+    <nav>
+        <a href="../../index.html">About Me</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../skills.html">Related Experiences</a>
+        <a href="../../contact.html">Contact Me</a>
+    </nav>
+</header>
+    <body>
+        <section id="Summary">
+            <h2>Swarm Robotics Submarine</h2>
+            <p>This is the Second research Project that I will be working on for the Purdue Mars.
+                The goal of the project is to develop a swarm of innovative passenger robots that will be transported by a larger mothership robot. 
+            the team currently consists of me and another PHD student where we will develop and manufature the robots. This is a multi unveristy collabration and more details about the project can be found:</p>
+            <a href="https://engineering.purdue.edu/IE/news/2023/she-nsf-ore-state-collab">Here</a>        
+        </section>
+        <section id="Bodycontent">
+            <h2>Design Work</h2>
+            In order to acheive engery efficent submarines, they needed a method to move. Underwater gliders overall seem like the best approach to efficently moving underwater. However we also want it to be able to become an underwater drifter. In order to achieve I came up with the idea for folding wings/fins.
+            Though in order to achieve the folding fins, I needed to get a little creative with the design. During the discuession, I was able to instantly come up with a design involving undersialjoints as seen below.
+            <video width="800" height="500" controls>
+                <source src="../../projects/projectpages/submarineimage/findesign.mp4" type="video/mp4">
+            </video>
+            <p>With the hardest part of the design figured out I began to create a semi accurate model of the design Here are videos of the results</p>
+            <video width="800" height="500" controls>
+                <source src="../../projects/projectpages/submarineimage/fullmotions.mp4" type="video/mp4">
+            </video>
+            <video width="800" height="500" controls>
+                <source src="../../projects/projectpages/submarineimage/explodeupdated.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section id="Bodycontent">
+            <h2>Future work</h2>
+            <p>Currently the CAD does not fully account for waterproofing methods/waterproof assembly so that is the next step</p>
+        </section>
+        <section id="socials">
+            <h2>socials</h2>
+            <div class="socials">
+                <a href="https://github.com/XxBeepxX/" target="_blank">
+                    <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+                    <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+    <section id="socials">
+        <h2>socials</h2>
+        <div class="socials">
+            <a href="https://github.com/XxBeepxX/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+                <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+    </body>
+</html>
+
