@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <title>Ryan Ting Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../../styles.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <style>
         /* Your CSS styles go here */
         body {
@@ -34,29 +34,6 @@
             padding: 2em;
             color: #fff; /* Set text color to contrast with the background */
         }
-        #projects {
-            margin-top: 20px; /* Adjust margin-top as needed */
-            padding: 0em;
-            text-align: center;
-        }
-        #Summary {
-            padding: 0em;
-            text-align: center;
-        }
-        #Body {
-            padding: 0em;
-        }
-        h2 {
-            text-align: center; 
-        }
-        #Research,
-        #School,
-        #Personal {
-            text-align: center;
-            width: 300px; /* Adjust the width as needed */
-            padding: 20px;
-            margin: 0 10px;
-        }
         footer {
             background-color: #333;
             color: #fff;
@@ -65,6 +42,16 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .projects-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .projects-list li {
+            display: inline-block;
+            margin: 0 10px;
         }
         #socials {
             position: fixed;
@@ -86,6 +73,7 @@
             width: 50px;
             height: auto;
         }
+        
 
     </style>
 </head>
@@ -100,7 +88,7 @@
             <a href="../../contact.html">Contact Me</a>
         </nav>
     </header>
-    <section id="Summary">
+    <section id="Bodycontent">
         <h2>IE332 Project 2 - Machine learning in R</h2>
         <p>This was the second project for IE332. The goal was to create the best machine learning model given training data where our goal is to classify positives and negatives. The training data has missing values, far more negatives than positives, and we were only allowed to select a 
             certain number of training data. There was also more of a penalty for false positives than false negatives.  
@@ -118,19 +106,4 @@
     </section>
     <section id="Bodycontent">
         <h2>Compiling the final result</h2>
-        <p>Since I had a solid understanding of the project after all the testing, I combined all the code algorithms into one file. The final contained everyone's data selection method, various algos we tested through different data partitions. Analysis of each trial, and predicted results.</p>
-    </section>
-    <section id="socials">
-        <h2>Socials</h2>
-        <div class="socials">
-            <a href="https://github.com/XxBeepxX/" target="_blank">
-                <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
-                <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
-            </a>
-        </div>
-    </section>
-
-</body>
-</html>
+        <p>Since I had a solid understanding of the project after all the testing, I combined all the code algorithms into one file. The final contained everyone's data selection method, various algos we tested through different data partitions. Analysis of each trial, and predicted results.</p

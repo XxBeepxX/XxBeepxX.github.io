@@ -35,13 +35,19 @@
             color: #fff; /* Set text color to contrast with the background */
         }
         #projects {
-            margin-top: 20px; /* Adjust margin-top as needed */
+            margin-top: auto;
             padding: 0em;
             text-align: center;
+        }
+
+        #projects p {
+            max-width: 80%;
+            margin: 0 auto; /* Center the text horizontally */
         }
         #projectlist {
             display: flex;
             justify-content: center;
+            
             padding: 20px;
         }
 
@@ -124,13 +130,19 @@
         }
         #platform_background_website {
             position: relative;
-            background: url(projects/projectpfp/p2pfp.png);
+            background: url(projects/projectpfp/website.png);
             background-repeat: no-repeat;
             background-size: cover;
         }
         #platform_background_stockbot {
             position: relative;
-            background: url(projects/projectpfp/p2pfp.png);
+            background: url(projects/projectpfp/stockbot.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #platform_background_autotyper {
+            position: relative;
+            background: url(projects/projectpfp/autotyper.png);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -229,41 +241,41 @@
     <section id="Personal">
         <h2>Personal</h2>
         <div class="platform">
-            <a href="projects/projectpages/website.html" class="platform-link">
-                <div class="platformImage" id=""></div>
+            <a href="https://github.com/XxBeepxX/XxBeepxX.github.io" class="platform-link">
+                <div class="platformImage" id="platform_background_website"></div>
                 <p class="blockTitle">Portfolio Website</p>
                 <div class="platformDescription">
                     <p class="largeText">Personal Portfolio Website</p>
                     <p class="mediumText">Dec 15-18, 2023</p>
                     <p class="smallText">Created a simple Static Website as a Portfolio and to help me get a job</p>
                     <p class ="skills"> <b>Skills:</b>CSS,HTML</p>
-                    <p class="seemore">click to see more</p>
+                    <p class="seemore">click to see github repository</p>
                 </div>
             </a>
         </div>
         <div class="platform">
-            <a href="projects/submarine.html" class="platform-link">
-                <div class="platformImage" id="platform_background_submarine"></div>
+            <a href="" class="platform-link">
+                <div class="platformImage" id="platform_background_stockbot"></div>
                 <p class="blockTitle"></p>
                 <div class="platformDescription">
                     <p class="largeText">Stock Bot</p>
                     <p class="mediumText">July 2022 to Present</p>
                     <p class="smallText">Developing a Stock-Bot on the side in Python. This bot utlizes live data from the Alpaca Streaming API and it makes buys based on my algorithm</p>
                     <p class ="smallText"> <b>Skills:</b>Python, MySQL 
-                    <p class="seemore">click to see more</p>
+                    <p class="seemore"></p>
                 </div>
             </a>
         </div>
         <div class="platform">
-            <a href="projects/submarine.html" class="platform-link">
-                <div class="platformImage" id="platform_background_submarine"></div>
+            <a href="https://github.com/XxBeepxX/simpletypebot" class="platform-link">
+                <div class="platformImage" id="platform_background_autotyper"></div>
                 <p class="blockTitle"></p>
                 <div class="platformDescription">
                     <p class="largeText">Autotyper</p>
                     <p class="mediumText">March 11 2022</p>
                     <p class="smallText">Created a simple Autotyper to win in typing games like Nitro Type. The autotyper acheives an average of 200 wpm in games such as Nitro Type</p>
                     <p class ="smallText"> <b>Skills:</b>Python, OpenCV 
-                    <p class="seemore">click to see more</p>
+                    <p class="seemore">click to see github repository</p>
                 </div>
             </a>
         </div>

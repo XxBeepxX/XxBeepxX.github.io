@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <title>Ryan Ting Portfolio</title>
     <style>
@@ -80,7 +80,6 @@
             width: 50px;
             height: auto;
         }
-
     </style>
 </head>
 <body>
@@ -94,47 +93,57 @@
             <a href="../../contact.html">Contact Me</a>
         </nav>
     </header>
-    <section id="Summary">
+    <section id="Bodycontent">
         <h2>Robotic Gripper</h2>
-        <p>I would say this is the first major robotics project that I worked on I wanted to challenege myself and create the most advanced robotic gripper</p>
+        <p>I would say this is the first major robotics project that I worked on. I wanted to challenge myself and create the most advanced robotic gripper.</p>
     </section>
-    <section id="Design">
+    <section id="Bodycontent">
         <h2>Design Work</h2>
         <p>This project started off fairly simple where I wanted to create a tri-finger robotic gripper with a rotating base to adjust positioning of the fingers.</p>
         <img src="../../projects/projectpages/gripperimage/firstcad.png" alt="Concept Cad model of design" width="300" height="200">
         <img src="../../projects/projectpages/gripperimage/secondcad.png" alt="Realistic Cad model of design" width="300" height="200">
-        <p>It was a fairly simple design, 2 degrees of freedom per finger, though I felt that it wasn't dexterious enough and I began to expereiment around with designs</p>
+        <p>It was a fairly simple design, 2 degrees of freedom per finger, though I felt that it wasn't dexterous enough, and I began to experiment around with designs.</p>
         <img src="../../projects/projectpages/gripperimage/threecad.png" alt="Second main iteration of design" width="300" height="200">
-        <p>This design had 3 degrees of freedom per finger where tip of the finger would be able to rotate for adjusted gripping. This design was good, but the Current Cad model lacked elegance and I felt the need to fix it up</p>
-        <p>While working on the fixing, I think I got a spurt of ambition, and I decided that I would try to make the most dexterious gripper possible. I wanted the gripper to be able rotate, shift, and do other things. Evencually I settled on a 5 degree of freedom per finger design. the gripper will be mounted on a Pandas Arm</p>
+        <p>This design had 3 degrees of freedom per finger where the tip of the finger would be able to rotate for adjusted gripping. This design was good, but the current Cad model lacked elegance, and I felt the need to fix it up.</p>
+        <p>While working on the fixing, I think I got a spurt of ambition, and I decided that I would try to make the most dexterous gripper possible. I wanted the gripper to be able to rotate, shift, and do other things. Eventually, I settled on a 5-degree of freedom per finger design. The gripper will be mounted on a Panda's Arm.</p>
         <img src="../../projects/projectpages/gripperimage/prefinal.png" alt="Final Design angle 1" width="300" height="200">
-        <p>After various 3d printed tests and minor modifications, The design was complete, here is what the final Cad looks like</p>
+        <p>After various 3D printed tests and minor modifications, the design was complete, here is what the final Cad looks like.</p>
         <img src="../../projects/projectpages/gripperimage/finaldesign.png" alt="Final Design angle 1" width="300" height="200">
         <img src="../../projects/projectpages/gripperimage/finaldview2.png" alt="Realistic Cad model of design" width="300" height="200">
         <p>Below are all the motions that are contained in a single finger.</p>
         <img src="../../projects/projectpages/gripperimage/motions.png" alt="Realistic Cad model of design" width="175" height="200">
         <ul>
-            <li>Motion 1:base rotation(rotation manipulation)</li>
-            <li>Motion 2: Outward extension(molding, manipulation)</li>
-            <li>Motion 3: up and down extension(molding, manipulation)</li>
-            <li>Motion 4: upper finger rotation(molding)</li>
-            <li>Motion 5: grip closing movement(molding)</li>
+            <li>Motion 1: base rotation (rotation manipulation)</li>
+            <li>Motion 2: Outward extension (molding, manipulation)</li>
+            <li>Motion 3: up and down extension (molding, manipulation)</li>
+            <li>Motion 4: upper finger rotation (molding)</li>
+            <li>Motion 5: grip closing movement (molding)</li>
         </ul>
-        <p>I would say the hardest part of design the hardware as motion 4 + motion 5. I wanted to ensure that both would be able to work without worring about tangling wires. After learning about a Slipring from a friend and various design iterations, I was able to come up with a solution that will fulfill these requirements</p>
+        <p>I would say the hardest part of designing the hardware as motion 4 + motion 5. I wanted to ensure that both would be able to work without worrying about tangling wires. After learning about a Slipring from a friend and various design iterations, I was able to come up with a solution that will fulfill these requirements.</p>
         <img src="../../projects/projectpages/gripperimage/slipring.png" alt="Realistic Cad model of design" width="300" height="200">
-        <p>With the Design Done, it was time for assembly. Here is what the gripper looks like fully assembled</p>
+        <p>With the Design Done, it was time for assembly. Here is what the gripper looks like fully assembled.</p>
         <img src="../../projects/projectpages/gripperimage/physfinal.png" alt="Realistic Cad model of design" width="300" height="200">
         <img src="../../projects/projectpages/gripperimage/mountedfinal.png" alt="Realistic Cad model of design" width="300" height="200">
     </section>
-    <section id="Eletrical/Software">
-        <h2>Eletrical/Software Work</h2>
-        <p> I would say this part was the biggest learning expereince for me. I had to wire 15 motors where I have a mix between servos and DCs. Though back than,I was not 
-            familliar with DC motors with Hall sensors and didn't know beforehand they would require a motor driver in order to operate. Once I figured out how to do the controlled movement, I also had to figure out how to have sysntrious movement from one Ariduno Mega. Though in the end I was able to figure it out. Below is the planned wiring diagram</p>
-        <img src="../../projects/projectpages/gripperimage/plannedwiredi.png" alt="Realistic Cad model of design" width="800" height="500">
-        <p> Wiring this this was messy. But managable
+    <section id="Bodycontent">
+        <h2>Electrical/Software Work</h2>
+        <p> I would say this part was the biggest learning experience for me. I had to wire 15 motors where I have a mix between servos and DCs. Though back then, I was not 
+            familiar with DC motors with Hall sensors and didn't know beforehand they would require a motor driver to operate. Once I figured out how to do the controlled movement, I also had to figure out how to have synchronous movement from one Arduino Mega. Though in the end I was able to figure it out. Below is the planned wiring diagram.</p>
+        <img src="../../projects/projectpages/gripperimage/plannedwiredi.png" alt="Realistic Cad model of design" width="500" height="400">
+        <p> Wiring this was messy, but manageable.</p>
+    </section>
+    <section id="Bodycontent">
+        <h2>Testing</h2>
+        <p> Here are some test videos. I was unable to test every single motion due to faulty electronics.</p>
+        <video width="400" height="300" controls>
+            <source src="../../projects/projectpages/gripperimage/gripper1.mp4" type="video/mp4">
+        </video>
+        <video width="400" height="300" controls>
+            <source src="../../projects/projectpages/gripperimage/gripper2.mp4" type="video/mp4">
+        </video>
     </section>
     <section id="socials">
-        <h2>socials</h2>
+        <h2>Socials</h2>
         <div class="socials">
             <a href="https://github.com/XxBeepxX/" target="_blank">
                 <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
@@ -147,4 +156,3 @@
 
 </body>
 </html>
-

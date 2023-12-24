@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Ting Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="src/styles/style.css"/>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        section {
+            padding: 2em;
+            color: #fff; /* Set text color to contrast with the background */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .projects-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .projects-list li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        #socials {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            height: 229px;
+            width: 64px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: black;
+            z-index: 2;
+            -webkit-transition: right 1s;
+            transition: right 1s;
+        }
+        .socials a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .socials img {
+            width: 50px;
+            height: auto;
+        }
+        #about {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        #contentPage4 {
+            text-align: center;
+        }
+
+        #contactForm {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contactForm label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #formSubmit,
+        #clearFields {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #clearFields {
+            background-color: #666;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ryan Ting</h1>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Related Experiences</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <div id="contentPage4">
+        <div class="spacer"></div>
+        <p class="pageTitle">Contact Me</p>
+        <p class="pageText">If you would like to contact me, please use the form below</p>
+        <!-- Formspree Code -->
+        <form id="contactForm" action="https://formspree.io/f/mjvnbjkn" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" required></textarea>
+            </label>
+            <!-- Configurations -->
+            <input type="hidden" name="_cc" value="rtting@purdue.edu">
+            <input type="hidden" name="_subject" value="Personal Website Contact Request">
+            <!-- Submission -->
+            <button id="formSubmit" type="submit">Send</button>
+            <button id="clearFields" type="button" onclick="clearForm()">Clear Fields</button>
+        </form>
+    </div>
+
+    <section id="socials">
+        <h2>socials</h2>
+        <div class="socials">
+            <a href="https://github.com/XxBeepxX/" target="_blank">
+                <img class="sidebarIcon icon" src="images/Github.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+                <img class="sidebarIcon icon" src="images/LinkedIn.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function clearForm() {
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+
+</body>
+</html>

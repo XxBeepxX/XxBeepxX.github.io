@@ -164,3 +164,13 @@ footer {
     color: #007bff; /* Change color to suit your design */
     cursor: pointer; 
 }
+#Bodycontent {
+    max-width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#Bodycontent img {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed to create spacing between the images */
+}
