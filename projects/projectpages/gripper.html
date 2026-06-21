@@ -1,158 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="../../styles.css"/>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
     <title>Ryan Ting Portfolio</title>
+
+
     <style>
-        /* Your CSS styles go here */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
+            background-color: #000;
+            color: #fff;
         }
+
+
         header {
+
             background-color: #333;
             color: #fff;
             padding: 1em;
             text-align: center;
+
         }
+
+
         nav {
+
             text-align: center;
             margin-bottom: 20px;
+
         }
+
+
         nav a {
+
             color: #fff;
             text-decoration: none;
             margin: 0 20px;
-        }
-        h2 {
-            text-align: center; 
-        }
-        section {
-            padding: 2em;
-            color: #fff; /* Set text color to contrast with the background */
-        }
-        #projects {
-            margin-top: 20px; /* Adjust margin-top as needed */
-            padding: 0em;
-            text-align: center;
+
         }
 
-        #Research,
-        #School,
-        #Personal {
+
+        h2 {
+
             text-align: center;
-            width: 300px; /* Adjust the width as needed */
-            padding: 20px;
-            margin: 0 10px;
+
         }
-        footer {
-            background-color: #333;
+
+
+        section {
+
+            padding: 2em;
             color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
         }
+
+
+        img {
+
+            margin: 10px;
+
+        }
+
+
+        video {
+
+            margin: 10px;
+
+        }
+
+
         #socials {
+
             position: fixed;
             top: 200px;
             right: 0;
+
             height: 229px;
             width: 64px;
+
             border-radius: 5px 0px 0px 5px;
+
             background-color: black;
+
             z-index: 2;
-            -webkit-transition: right 1s;
-            transition: right 1s;
+
         }
+
+
         .socials a {
+
             display: block;
             margin-bottom: 10px;
+
         }
+
+
         .socials img {
+
             width: 50px;
             height: auto;
+
         }
+
+
     </style>
+
+
 </head>
+
+
+
 <body>
 
-    <header>
-        <h1>Ryan Ting</h1>
-        <nav>
-            <a href="../../index.html">About Me</a>
-            <a href="../../projects.html">Projects</a>
-            <a href="../../skills.html">Related Experiences</a>
-            <a href="../../contact.html">Contact Me</a>
-        </nav>
-    </header>
-    <section id="Bodycontent">
-        <h2>Robotic Gripper</h2>
-        <p>I would say this is the first major robotics project that I worked on. I wanted to challenge myself and create the most advanced robotic gripper.</p>
-    </section>
-    <section id="Bodycontent">
-        <h2>Design Work</h2>
-        <p>This project started off fairly simple where I wanted to create a tri-finger robotic gripper with a rotating base to adjust positioning of the fingers.</p>
-        <img src="../../projects/projectpages/gripperimage/firstcad.png" alt="Concept Cad model of design" width="300" height="200">
-        <img src="../../projects/projectpages/gripperimage/secondcad.png" alt="Realistic Cad model of design" width="300" height="200">
-        <p>It was a fairly simple design, 2 degrees of freedom per finger, though I felt that it wasn't dexterous enough, and I began to experiment around with designs.</p>
-        <img src="../../projects/projectpages/gripperimage/threecad.png" alt="Second main iteration of design" width="300" height="200">
-        <p>This design had 3 degrees of freedom per finger where the tip of the finger would be able to rotate for adjusted gripping. This design was good, but the current Cad model lacked elegance, and I felt the need to fix it up.</p>
-        <p>While working on the fixing, I think I got a spurt of ambition, and I decided that I would try to make the most dexterous gripper possible. I wanted the gripper to be able to rotate, shift, and do other things. Eventually, I settled on a 5-degree of freedom per finger design. The gripper will be mounted on a Panda's Arm.</p>
-        <img src="../../projects/projectpages/gripperimage/prefinal.png" alt="Final Design angle 1" width="300" height="200">
-        <p>After various 3D printed tests and minor modifications, the design was complete, here is what the final Cad looks like.</p>
-        <img src="../../projects/projectpages/gripperimage/finaldesign.png" alt="Final Design angle 1" width="300" height="200">
-        <img src="../../projects/projectpages/gripperimage/finaldview2.png" alt="Realistic Cad model of design" width="300" height="200">
-        <p>Below are all the motions that are contained in a single finger.</p>
-        <img src="../../projects/projectpages/gripperimage/motions.png" alt="Realistic Cad model of design" width="175" height="200">
-        <ul>
-            <li>Motion 1: base rotation (rotation manipulation)</li>
-            <li>Motion 2: Outward extension (molding, manipulation)</li>
-            <li>Motion 3: up and down extension (molding, manipulation)</li>
-            <li>Motion 4: upper finger rotation (molding)</li>
-            <li>Motion 5: grip closing movement (molding)</li>
-        </ul>
-        <p>I would say the hardest part of designing the hardware as motion 4 + motion 5. I wanted to ensure that both would be able to work without worrying about tangling wires. After learning about a Slipring from a friend and various design iterations, I was able to come up with a solution that will fulfill these requirements.</p>
-        <img src="../../projects/projectpages/gripperimage/slipring.png" alt="Realistic Cad model of design" width="300" height="200">
-        <p>With the Design Done, it was time for assembly. Here is what the gripper looks like fully assembled.</p>
-        <img src="../../projects/projectpages/gripperimage/physfinal.png" alt="Realistic Cad model of design" width="300" height="200">
-        <img src="../../projects/projectpages/gripperimage/mountedfinal.png" alt="Realistic Cad model of design" width="300" height="200">
-    </section>
-    <section id="Bodycontent">
-        <h2>Electrical/Software Work</h2>
-        <p> I would say this part was the biggest learning experience for me. I had to wire 15 motors where I have a mix between servos and DCs. Though back then, I was not 
-            familiar with DC motors with Hall sensors and didn't know beforehand they would require a motor driver to operate. Once I figured out how to do the controlled movement, I also had to figure out how to have synchronous movement from one Arduino Mega. Though in the end I was able to figure it out. Below is the planned wiring diagram.</p>
-        <img src="../../projects/projectpages/gripperimage/plannedwiredi.png" alt="Realistic Cad model of design" width="500" height="400">
-        <p> Wiring this was messy, but manageable.</p>
-    </section>
-    <section id="Bodycontent">
-        <h2>Testing</h2>
-        <p> Here are some test videos. I was unable to test every single motion due to faulty electronics.</p>
-        <video width="400" height="300" controls>
-            <source src="../../projects/projectpages/gripperimage/gripper1.mp4" type="video/mp4">
-        </video>
-        <video width="400" height="300" controls>
-            <source src="../../projects/projectpages/gripperimage/gripper2.mp4" type="video/mp4">
-        </video>
-    </section>
-    <section id="socials">
-        <h2>Socials</h2>
-        <div class="socials">
-            <a href="https://github.com/XxBeepxX/" target="_blank">
-                <img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
-                <img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
-            </a>
-        </div>
-    </section>
+
+
+<header>
+
+    <h1>Ryan Ting</h1>
+
+
+    <nav>
+
+        <a href="../../index.html">About Me</a>
+
+        <a href="../../projects.html">Projects</a>
+
+        <a href="../../skills.html">Related Experiences</a>
+
+        <a href="../../contact.html">Contact Me</a>
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+<section id="Bodycontent">
+
+
+<h2>Robotic Gripper</h2>
+
+
+<p>
+
+    This was one of my first major robotics projects where I explored advanced robotic 
+    manipulation and challenged myself to design a highly dexterous robotic gripper.
+
+    The goal was to create a system capable of complex object manipulation through 
+    increased degrees of freedom and mechanical versatility.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="Bodycontent">
+
+
+<h2>Design Work</h2>
+
+
+<p>
+
+    The initial concept was a tri-finger robotic gripper with a rotating base that allowed 
+    adjustable positioning of the fingers.
+
+    This design provided a foundation for exploring more advanced manipulation capabilities 
+    through additional degrees of freedom.
+
+</p>
+
+
+<img src="../../projects/projectpages/gripperimage/firstcad.png" 
+alt="Concept Cad model of design" width="300" height="200">
+
+
+<img src="../../projects/projectpages/gripperimage/secondcad.png" 
+alt="Realistic Cad model of design" width="300" height="200">
+
+
+
+<p>
+
+    After evaluating the first design, I realized that the system lacked the dexterity 
+    required for more complex manipulation tasks.
+
+    I began exploring alternative mechanisms and additional degrees of freedom.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/threecad.png"
+alt="Second main iteration of design" width="300" height="200">
+
+
+
+<p>
+
+    This iteration introduced 3 degrees of freedom per finger, allowing the fingertip 
+    to rotate for improved gripping capabilities.
+
+    While this design improved functionality, I continued refining the mechanical design 
+    to create a more compact and capable system.
+
+</p>
+
+
+
+<p>
+
+    The final design evolved into a 5-degree-of-freedom per finger robotic gripper.
+
+    This allowed each finger to rotate, extend, reposition, and perform more complex 
+    manipulation motions.
+
+    The final design was created to be mounted onto a Panda robotic arm.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/prefinal.png"
+alt="Final Design angle 1" width="300" height="200">
+
+
+
+<p>
+
+    After multiple 3D printed prototypes and design iterations, the final CAD model 
+    was completed.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/finaldesign.png"
+alt="Final Design" width="300" height="200">
+
+
+<img src="../../projects/projectpages/gripperimage/finaldview2.png"
+alt="Realistic Cad model" width="300" height="200">
+
+
+
+
+
+<p>
+
+    Below are the different motions contained within a single finger.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/motions.png"
+alt="Finger motions" width="175" height="200">
+
+
+
+<ul>
+
+<li>Motion 1: Base rotation (rotation manipulation)</li>
+
+<li>Motion 2: Outward extension (molding/manipulation)</li>
+
+<li>Motion 3: Up and down extension (molding/manipulation)</li>
+
+<li>Motion 4: Upper finger rotation (molding)</li>
+
+<li>Motion 5: Grip closing movement (molding)</li>
+
+</ul>
+
+
+
+
+<p>
+
+    One of the biggest mechanical challenges was designing the fourth and fifth motions 
+    while preventing wire tangling.
+
+    After learning about slip rings and exploring different mechanical layouts, I 
+    developed a solution that allowed continuous rotation while maintaining electrical 
+    connections.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/slipring.png"
+alt="Slipring design" width="300" height="200">
+
+
+
+<p>
+
+    With the mechanical design completed, the gripper was assembled and prepared for 
+    testing.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/physfinal.png"
+alt="Physical gripper" width="300" height="200">
+
+
+<img src="../../projects/projectpages/gripperimage/mountedfinal.png"
+alt="Mounted gripper" width="300" height="200">
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="Bodycontent">
+
+
+<h2>Electrical/Software Work</h2>
+
+
+<p>
+
+    The electrical and software integration was one of the largest learning experiences 
+    during this project.
+
+    The system required controlling 15 motors consisting of both servo motors and DC 
+    motors with Hall sensors.
+
+</p>
+
+
+
+<p>
+
+    Initially, I was unfamiliar with the additional hardware requirements of DC motors, 
+    including motor drivers and feedback control.
+
+    Through testing and iteration, I developed a control system using an Arduino Mega 
+    capable of coordinating synchronous movement across the different actuators.
+
+</p>
+
+
+
+<img src="../../projects/projectpages/gripperimage/plannedwiredi.png"
+alt="Wiring diagram" width="500" height="400">
+
+
+
+<p>
+
+    The final wiring system was complex, but manageable, and provided valuable 
+    experience integrating mechanical systems with electronics and embedded control.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="Bodycontent">
+
+
+<h2>Testing</h2>
+
+
+
+<p>
+
+    Testing was performed to validate the mechanical motions and control system.
+
+    While some motions could not be fully evaluated due to electronic component issues, 
+    the testing process helped identify improvements for future iterations.
+
+</p>
+
+
+
+<video width="400" height="300" controls>
+
+<source src="../../projects/projectpages/gripperimage/gripper1.mp4" type="video/mp4">
+
+</video>
+
+
+
+<video width="400" height="300" controls>
+
+<source src="../../projects/projectpages/gripperimage/gripper2.mp4" type="video/mp4">
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="Bodycontent">
+
+
+<h2>Conclusion</h2>
+
+
+
+<p>
+
+    This project was a major milestone in my robotics journey and helped me develop 
+    experience across mechanical design, electronics, embedded systems, and robotic 
+    integration.
+
+</p>
+
+
+
+<p>
+
+    Through multiple design iterations, prototyping, and testing, I transformed an 
+    initial concept into a functional multi-degree-of-freedom robotic gripper.
+
+    The project challenged me to think about how mechanical systems, software, and 
+    electronics must work together to create reliable robotic platforms.
+
+</p>
+
+
+
+<p>
+
+    Although there are still opportunities for additional testing and refinement, this 
+    project strengthened my interest in robotics hardware development and designing 
+    complex systems that bridge mechanical and software engineering.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="socials">
+
+
+<h2>Socials</h2>
+
+
+
+<div class="socials">
+
+
+
+<a href="https://github.com/XxBeepxX/" target="_blank">
+
+<img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+
+</a>
+
+
+
+
+<a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+
+<img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+
+</a>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
 
 </body>
+
 </html>
