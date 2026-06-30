@@ -79,16 +79,18 @@ footer {
     opacity: 1;
 }
 .platform {
-	display:inline-block;
-	position:relative;
-	margin:2px auto;
-	height:200px;
-	width:300px;
-	cursor:pointer;
-	background:rgba(25,25,25,0.95);
-	-webkit-transition:height 0.5s;
-	transition:height 0.5s;
+    display: block;
+    position: relative;
+    margin: 2px auto;
+    width: 100%;          /* was 300px — now fills its column */
+    max-width: 300px;
+    height: auto;          /* was 200px — let content + image define height */
+    cursor: pointer;
+    background: rgba(25,25,25,0.95);
+    box-sizing: border-box;
+    transition: background 0.5s;
 }
+
 .platformImage {
 	top:2px;
 	position:relative;

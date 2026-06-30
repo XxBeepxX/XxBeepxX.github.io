@@ -81,7 +81,7 @@ section {
 #School,
 #Personal {
     flex: 1 1 0;        /* equal width, allows shrinking */
-    min-width: 50px;   /* prevents unreadable collapse */
+    min-width: 0px;   /* prevents unreadable collapse */
     max-width: 420px;   /* prevents over-expansion */
     text-align: center;
     padding: 1px;
@@ -147,6 +147,13 @@ footer {
     background-size: cover;
 }
 
+#platform_background_pianohand {
+    position: relative;
+    background: url(projects/projectpfp/pianopfp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #platform_background_IEproject_one {
     position: relative;
     background: url(projects/projectpfp/p1pfp.png);
@@ -174,7 +181,12 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#platform_background_sinkmat {
+    position: relative;
+    background: url(projects/projectpfp/sinkmat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #platform_background_autotyper {
     position: relative;
     background: url(projects/projectpfp/autotyper.png);
@@ -253,6 +265,19 @@ footer {
                 </a>
             </div>
             <div class="platform">
+                <a href="projects/projectpages/pianohand.html" class="platform-link">
+                    <div class="platformImage" id="platform_background_pianohand"></div>
+                    <p class="blockTitle">Piano Hand</p>
+                    <div class="platformDescription">
+                        <p class="largeText">Purdue ARC Piano Hand</p>
+                        <p class="mediumText">May 2024 to May 2024</p>
+                        <p class="smallText">Designed and built a robotic piano hand for the Autonomous Robotics Club at Purdue.</p>
+                        <p class="skills"> <b>Skills:</b>CAD, Mechatronics, Manufacturing, Design Optimization</p>
+                        <p class="seemore">click to see more</p>
+                    </div>
+                </a>
+            </div>
+            <div class="platform">
                 <a href="projects/projectpages/p1.html" class="platform-link">
                     <div class="platformImage" id="platform_background_IEproject_one"></div>
                     <p class="blockTitle">IE332 Project 1</p>
@@ -282,6 +307,19 @@ footer {
         <!-- Personal section -->
         <section id="Personal">
             <h2>Personal</h2>
+            <div class="platform">
+                <a href="projects/projectpages/sinkmat.html" class="platform-link">
+                    <div class="platformImage" id="platform_background_sinkmat"></div>
+                    <p class="blockTitle">Custom Home Sink Mat</p>
+                    <div class="platformDescription">
+                        <p class="largeText">Custom Home Sink Mat</p>
+                        <p class="mediumText">June 2025 to June 2025</p>
+                        <p class="smallText">Designed and 3D printed a custom sink mat for my parents' kitchen sink.</p>
+                        <p class="skills"> <b>Skills:</b> 3D Printing, CAD, Design Optimization</p>
+                        <p class="seemore">click to see more</p>
+                    </div>
+                </a>
+            </div>
             <div class="platform">
                 <a href="https://github.com/XxBeepxX/XxBeepxX.github.io" class="platform-link">
                     <div class="platformImage" id="platform_background_website"></div>

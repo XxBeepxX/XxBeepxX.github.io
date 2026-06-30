@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../styles.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<title>Ryan Ting Portfolio</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #000;
+color: #fff;
+        }
+header {
+background-color: #333;
+color: #fff;
+padding: 1em;
+text-align: center;
+        }
+nav {
+text-align: center;
+margin-bottom: 20px;
+        }
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 20px;
+        }
+section {
+padding: 2em;
+color: #fff;
+        }
+#Bodycontent {
+padding: 0em 2em 2em 2em;
+        }
+h2 {
+text-align: center;
+        }
+img {
+margin: 10px;
+border-radius: 5px;
+        }
+video {
+margin: 10px;
+border-radius: 5px;
+        }
+#socials {
+position: fixed;
+top: 200px;
+right: 0;
+height: 229px;
+width: 64px;
+border-radius: 5px 0px 0px 5px;
+background-color: black;
+z-index: 2;
+        }
+.socials a {
+display: block;
+margin-bottom: 10px;
+        }
+.socials img {
+width: 50px;
+height: auto;
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>Ryan Ting</h1>
+<nav>
+<a href="../../index.html">About Me</a>
+<a href="../../projects.html">Projects</a>
+<a href="../../skills.html">Related Experiences</a>
+<a href="../../contact.html">Contact Me</a>
+</nav>
+</header>
+<section id="Bodycontent">
+<h2>Piano Hand Prototype</h2>
+<p>
+        As part of ongoing robotics work within the Autonomous Robotics Club, one of the teams 
+        was developing a piano-playing robotic hand. While I was not directly assigned to that 
+        subgroup, I was interested in the mechanism design challenge and independently developed 
+        a rapid CAD prototype to explore how such a system could be built.
+</p>
+<p>
+        The goal of this prototype was to understand how a compact actuation system could replicate 
+        human finger motion with enough precision to press piano keys reliably. I focused on 
+        simplifying the mechanism into a manufacturable design that could realistically be 3D printed 
+        and assembled quickly.
+</p>
+<p>
+        The design also incorporates a rail-based motion system I was exploring in parallel. It features 
+        20mm linear rails and a V-wheel gantry, along with forward-backward and side-to-side linear movement. 
+        The side-to-side axis is driven by a stepper motor (similar to what is used in 3D printers), though 
+        I expect the control and tuning could be a little annoying depending on setup and friction.
+</p>
+<p>
+    From a manufacturing standpoint, the model should be suitable for 3D printing or progression toward assembly,
+    with only minor fixes needed around stepper motor mounting, 3D printing tolerances, and gantry alignment.
+</p>
+<p>
+    However, from a functional design perspective, the current mechanism is not fully ideal for a piano hand application.
+    The finger design does not provide enough degrees of freedom, and the resulting key press interaction would likely
+    be inconsistent for accurate piano actuation.
+</p>
+<p>
+        This model was developed in approximately 1–2 days as a fast iteration exercise to explore 
+        feasibility before more advanced actuation and control systems are introduced.
+</p>
+<p>
+        The overall prototype can be seen below:
+</p>
+<img src="../../projects/projectpages/pianoimage/pianoside.webp" width="300" height="200">
+<img src="../../projects/projectpages/pianoimage/pianoangle.webp" width="300" height="200">
+<img src="../../projects/projectpages/pianoimage/pianotop.webp" width="800" height="200">
+</section>
+<section id="socials">
+<h2>Socials</h2>
+<div class="socials">
+<a href="https://github.com/XxBeepxX/" target="_blank">
+<img class="sidebarIcon icon" src="../../images/Github.png" alt="GitHub">
+</a>
+<a href="https://www.linkedin.com/in/ryan-t-ting/" target="_blank">
+<img class="sidebarIcon icon" src="../../images/LinkedIn.png" alt="LinkedIn">
+</a>
+</div>
+</section>
+</body>
+</html>
